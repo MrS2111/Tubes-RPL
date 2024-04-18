@@ -1,0 +1,8 @@
+# ignore log files
+*.log
+
+*iml/*
+
+.idea/*
+
+.vscode/*
