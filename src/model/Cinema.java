@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import src.model.studio.Studio;
 
-public class Cinema {
+public class Cinema { //Single Responsibility
     private String id;
     private String nama;
     private String alamat;

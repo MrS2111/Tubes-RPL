@@ -246,7 +246,7 @@ public class Controller {
     }
 
     // Jadwal area
-    public Jadwal getJadwalById(String idJadwal) {
+    public Jadwal getJadwalById(String idJadwal) { // Data Access Object
         try {
             conn.open();
             Statement statement = conn.connection.createStatement();
@@ -269,7 +269,7 @@ public class Controller {
 
             return jadwal;
         } catch (Exception ex) {
-            new ExceptionLogger(ex.getMessage());
+            new ExceptionLogger(ex.getMessage()); //Error Handler
             return null;
         }
     }
@@ -1413,7 +1413,7 @@ public class Controller {
     }
 
     // User area
-    private User getUserById(String idUser) {
+    private User getUserById(String idUser) { //Factory pattern
         try {
             conn.open();
 

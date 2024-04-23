@@ -3,7 +3,7 @@ package src.controller;
 import java.sql.Date;
 
 public class UserDataSingleton {
-    private static UserDataSingleton instance;
+    private static UserDataSingleton instance; //Singleton
     
     private int id;
     private String username;
